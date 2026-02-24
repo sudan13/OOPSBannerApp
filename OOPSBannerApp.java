@@ -1,61 +1,61 @@
-
-
 public class OOPSBannerApp {
 
-    
-    public static String[] getOPattern() {
-        return new String[]{
-                "  *****  ",
-                " **   ** ",
-                "**     **",
-                "**     **",
-                "**     **",
-                " **   ** ",
-                "  *****  "
-        };
-    }
-
-    
-    public static String[] getPPattern() {
-        return new String[]{
-                "*******  ",
-                "**    ** ",
-                "**    ** ",
-                "*******  ",
-                "**       ",
-                "**       ",
-                "**       "
-        };
-    }
-
-    
-    public static String[] getSPattern() {
-        return new String[]{
-                "  ****** ",
-                " **    **",
-                "**       ",
-                "  *****  ",
-                "       **",
-                "**    ** ",
-                " ******  "
-        };
-    }
-
-    
     public static void main(String[] args) {
 
-        
-        String[] oPattern1 = getOPattern();
-        String[] oPattern2 = getOPattern();
-        String[] pPattern = getPPattern();
-        String[] sPattern = getSPattern();
+        String[] lines = {
 
-        
-        for (int i = 0; i < oPattern1.length; i++) {
-            System.out.println(oPattern1[i] + "  "
-                    + oPattern2[i] + "  "
-                    + pPattern[i] + "  "
-                    + sPattern[i]);
+            String.join("   ",
+                    " ***** ",
+                    " ***** ",
+                    " ***** ",
+                    " ***** "
+            ),
+
+            String.join("   ",
+                    "*     *",
+                    "*     *",
+                    "*     *",
+                    "*      "
+            ),
+
+            String.join("   ",
+                    "*     *",
+                    "*     *",
+                    "*     *",
+                    "*      "
+            ),
+
+            String.join("   ",
+                    "*     *",
+                    "*     *",
+                    " ***** ",
+                    " ***** "
+            ),
+
+            String.join("   ",
+                    "*     *",
+                    "*     *",
+                    "*      ",
+                    "      *"
+            ),
+
+            String.join("   ",
+                    "*     *",
+                    "*     *",
+                    "*      ",
+                    "      *"
+            ),
+
+            String.join("   ",
+                    " ***** ",
+                    " ***** ",
+                    "*      ",
+                    " ***** "
+            )
+        };
+
+        for (String line : lines) {
+            System.out.println(line);
         }
     }
 }
